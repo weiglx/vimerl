@@ -109,7 +109,7 @@ function s:ErlangFindExternalFunc(module, base)
 		return []
 	endif
 
-	let functions = system('escript ' s:erlang_complete_file . ' ' . a:module)
+	let functions = system('escript ' . s:erlang_complete_file . ' ' . a:module)
 	for function_spec in split(functions, '\n')
 		if match(function_spec, a:base) == 0
 			let function_name = matchstr(function_spec, a:base . '\w*')
