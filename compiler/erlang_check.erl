@@ -2,7 +2,8 @@
 
 main([File]) ->
     Dir = get_root(filename:dirname(File)),
-    Defs = [strong_validation,
+    Defs = [
+            %strong_validation,
             warn_export_all,
             warn_export_vars,
             warn_shadow_vars,
