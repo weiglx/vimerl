@@ -34,6 +34,8 @@ function s:LoadSkeleton(skel_name)
 		if !has_key(g:erlang_skel_header, 'year')
 			call s:SubstituteField('year', strftime('%Y'))
 		endif
+        call s:SubstituteField('month', strftime('%m'))
+        call s:SubstituteField('day', strftime('%d'))
 		call append(line('$'), '')
 		normal G
 	endif

@@ -1,0 +1,12 @@
+-module($MODULENAME).
+
+-export([]).
+
+%% 
+%% API functions
+%%
+
+
+%%
+%% Internal functions
+%%
