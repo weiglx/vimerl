@@ -53,8 +53,8 @@ function s:SetErlangOptions()
 	setlocal commentstring=%%s
 	setlocal formatoptions+=ro
 	setlocal suffixesadd=.erl
-	let libs = substitute(system('which erl'), '/bin/erl', '/lib/erlang/lib/**/src/', '')
-	execute 'setlocal path+=' . libs
+	"let libs = substitute(system('which erl'), '/bin/erl', '/lib/erlang/lib/**/src/', '')
+	"execute 'setlocal path+=' . libs
 	let &l:keywordprg = g:erlang_keywordprg
 endfunction
 
